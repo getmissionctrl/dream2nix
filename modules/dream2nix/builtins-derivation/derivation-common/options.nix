@@ -23,6 +23,7 @@ in {
     type = t.nullOr (t.listOf t.str);
     default = ["out"];
   };
+  __noChroot = optNullOrBool;
   __contentAddressed = optNullOrBool;
   __structuredAttrs = lib.mkOption {
     type = t.nullOr t.bool;
